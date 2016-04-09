@@ -14,6 +14,8 @@
 		8D5A58D71CB844E8008EA925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A58D51CB844E8008EA925 /* LaunchScreen.storyboard */; };
 		8D5A58E21CB844E8008EA925 /* StormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A58E11CB844E8008EA925 /* StormTests.swift */; };
 		8D5A58ED1CB844E8008EA925 /* StormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A58EC1CB844E8008EA925 /* StormUITests.swift */; };
+		8D5A58FB1CB844F9008EA925 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A58FA1CB844F9008EA925 /* CurrentWeather.plist */; };
+		8D5A58FD1CB84D2D008EA925 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A58FC1CB84D2D008EA925 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8D5A58E81CB844E8008EA925 /* StormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5A58EC1CB844E8008EA925 /* StormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormUITests.swift; sourceTree = "<group>"; };
 		8D5A58EE1CB844E8008EA925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5A58FA1CB844F9008EA925 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		8D5A58FC1CB84D2D008EA925 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		8D5A58CB1CB844E8008EA925 /* Storm */ = {
 			isa = PBXGroup;
 			children = (
+				8D5A58FA1CB844F9008EA925 /* CurrentWeather.plist */,
+				8D5A58FC1CB84D2D008EA925 /* CurrentWeather.swift */,
 				8D5A58CC1CB844E8008EA925 /* AppDelegate.swift */,
 				8D5A58CE1CB844E8008EA925 /* ViewController.swift */,
 				8D5A58D01CB844E8008EA925 /* Main.storyboard */,
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5A58D71CB844E8008EA925 /* LaunchScreen.storyboard in Resources */,
+				8D5A58FB1CB844F9008EA925 /* CurrentWeather.plist in Resources */,
 				8D5A58D41CB844E8008EA925 /* Assets.xcassets in Resources */,
 				8D5A58D21CB844E8008EA925 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5A58CF1CB844E8008EA925 /* ViewController.swift in Sources */,
+				8D5A58FD1CB84D2D008EA925 /* CurrentWeather.swift in Sources */,
 				8D5A58CD1CB844E8008EA925 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
