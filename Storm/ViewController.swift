@@ -38,9 +38,9 @@ class ViewController: UIViewController {
                         self.currentPrecipitationLabel?.text = "\(precip)%"
                     }
                     
-                    if let icon = currentWeather.icon {
-                        self.currentWeatherIcon?.image = icon
-                    }
+//                    if let icon = currentWeather.icon {
+//                        self.currentWeatherIcon?.image = icon
+//                    }
                 }
                 
             }

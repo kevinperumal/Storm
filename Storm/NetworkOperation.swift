@@ -37,7 +37,7 @@ class NetworkOperation {
             }
             
         }
-    
+        
         dataTask.resume()
     }
 }
