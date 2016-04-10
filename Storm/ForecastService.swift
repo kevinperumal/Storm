@@ -15,7 +15,7 @@ struct ForecastService {
     
     init(APIKey: String) {
         self.forecastAPIKey = APIKey
-        self.forecastBaseURL = NSURL(string: "http://api.forecast.io/forecast/\(forecastAPIKey)/")
+        self.forecastBaseURL = NSURL(string: "https://api.forecast.io/forecast/\(forecastAPIKey)/")
     }
     
     func getForecast(lat: Double, long: Double, completion: (CurrentWeather? -> Void)) {

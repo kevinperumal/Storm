@@ -23,7 +23,22 @@ class ViewController: UIViewController {
         forecastService.getForecast(coordinate.lat, long: coordinate.long) {
             (let currently) in
             if let currentWeather = currently {
-                // update UI
+                dispatch_async(dispatch_get_main_queue()) {
+                    
+                    if let temperature = currentWeather.temperature {
+                        self.currentTemperatureLabel?.text = "\(temperature)º"
+                    }
+                    
+                    if let humidity = currentWeather.humidity {
+                        self.currentHumidityLabel?.text = "\(humidity)%"
+                    }
+                    
+                    if let precip = currentWeather.precipProbability {
+                        self.currentPrecipitationLabel?.text = "\(precip)%"
+                    }
+                    
+                }
+                
             }
         }
     }
