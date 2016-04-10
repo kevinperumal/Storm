@@ -16,6 +16,8 @@
 		8D5A58ED1CB844E8008EA925 /* StormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A58EC1CB844E8008EA925 /* StormUITests.swift */; };
 		8D5A58FB1CB844F9008EA925 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A58FA1CB844F9008EA925 /* CurrentWeather.plist */; };
 		8D5A58FD1CB84D2D008EA925 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A58FC1CB84D2D008EA925 /* CurrentWeather.swift */; };
+		8D5A58FF1CB9E178008EA925 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A58FE1CB9E178008EA925 /* NetworkOperation.swift */; };
+		8D5A59011CB9EDD8008EA925 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A59001CB9EDD8008EA925 /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		8D5A58EE1CB844E8008EA925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D5A58FA1CB844F9008EA925 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
 		8D5A58FC1CB84D2D008EA925 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		8D5A58FE1CB9E178008EA925 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		8D5A59001CB9EDD8008EA925 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				8D5A58D31CB844E8008EA925 /* Assets.xcassets */,
 				8D5A58D51CB844E8008EA925 /* LaunchScreen.storyboard */,
 				8D5A58D81CB844E8008EA925 /* Info.plist */,
+				8D5A58FE1CB9E178008EA925 /* NetworkOperation.swift */,
+				8D5A59001CB9EDD8008EA925 /* ForecastService.swift */,
 			);
 			path = Storm;
 			sourceTree = "<group>";
@@ -263,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5A58FF1CB9E178008EA925 /* NetworkOperation.swift in Sources */,
 				8D5A58CF1CB844E8008EA925 /* ViewController.swift in Sources */,
 				8D5A58FD1CB84D2D008EA925 /* CurrentWeather.swift in Sources */,
+				8D5A59011CB9EDD8008EA925 /* ForecastService.swift in Sources */,
 				8D5A58CD1CB844E8008EA925 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
