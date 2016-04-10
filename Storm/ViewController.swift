@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentTemperatureLabel: UILabel?
     @IBOutlet weak var currentHumidityLabel: UILabel?
     @IBOutlet weak var currentPrecipitationLabel: UILabel?
+    @IBOutlet weak var currentWeatherIcon: UIImageView?
 
     private let forecastAPIKey = "b7402ea41ff33993076ef2bc0851b099"
     let coordinate: (lat: Double, long: Double) = (37.8267,-122.423)
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
         let forecastService = ForecastService(APIKey: forecastAPIKey)
         forecastService.getForecast(coordinate.lat, long: coordinate.long) {
             (let currently) in
-            if let currentWeather = currently {
+                if let currentWeather = currently {
                 dispatch_async(dispatch_get_main_queue()) {
                     
                     if let temperature = currentWeather.temperature {
@@ -37,6 +38,9 @@ class ViewController: UIViewController {
                         self.currentPrecipitationLabel?.text = "\(precip)%"
                     }
                     
+                    if let icon = currentWeather.icon {
+                        self.currentWeatherIcon?.image = icon
+                    }
                 }
                 
             }

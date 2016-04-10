@@ -47,6 +47,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-0k-ZiN">
+                                <rect key="frame" x="190" y="108" width="60" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="Cyr-dp-Hiq">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Vz1-6O-7C4"/>
+                                    <constraint firstAttribute="height" constant="60" id="c0J-6L-e8h"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -54,11 +66,13 @@
                             <constraint firstItem="bfM-Z3-Fdv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-65.5" id="6cT-Bd-o8B"/>
                             <constraint firstItem="5dn-1t-6Ky" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EOr-Gj-IKe"/>
                             <constraint firstItem="wWB-BN-kUd" firstAttribute="centerX" secondItem="bfM-Z3-Fdv" secondAttribute="centerX" id="Ea2-9W-zGR"/>
+                            <constraint firstItem="D9e-0k-ZiN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="OE4-bP-ou6"/>
                             <constraint firstItem="wWB-BN-kUd" firstAttribute="top" secondItem="bfM-Z3-Fdv" secondAttribute="bottom" constant="8" symbolic="YES" id="RPV-vY-BZO"/>
                             <constraint firstItem="rCv-Rl-FuQ" firstAttribute="top" secondItem="5dn-1t-6Ky" secondAttribute="bottom" constant="6" id="S89-eE-9or"/>
                             <constraint firstItem="qvb-QH-1WZ" firstAttribute="top" secondItem="rCv-Rl-FuQ" secondAttribute="bottom" constant="9" id="ZYe-Eb-y40"/>
                             <constraint firstItem="rCv-Rl-FuQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="cEp-5F-6EG"/>
                             <constraint firstItem="qvb-QH-1WZ" firstAttribute="centerX" secondItem="rCv-Rl-FuQ" secondAttribute="centerX" id="jMk-P6-hpl"/>
+                            <constraint firstItem="5dn-1t-6Ky" firstAttribute="top" secondItem="D9e-0k-ZiN" secondAttribute="bottom" constant="37" id="lGD-Ke-s9a"/>
                             <constraint firstItem="bfM-Z3-Fdv" firstAttribute="top" secondItem="5dn-1t-6Ky" secondAttribute="bottom" constant="6" id="mih-Vh-g7r"/>
                         </constraints>
                     </view>
@@ -66,10 +80,14 @@
                         <outlet property="currentHumidityLabel" destination="wWB-BN-kUd" id="4po-xd-8bx"/>
                         <outlet property="currentPrecipitationLabel" destination="qvb-QH-1WZ" id="bVq-Us-eo7"/>
                         <outlet property="currentTemperatureLabel" destination="5dn-1t-6Ky" id="eWi-fe-Yc4"/>
+                        <outlet property="currentWeatherIcon" destination="Cyr-dp-Hiq" id="etw-ae-9gG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="30" height="30"/>
+    </resources>
 </document>
