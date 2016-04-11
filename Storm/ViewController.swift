@@ -21,10 +21,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        retreieveWeatherForecast()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func retreieveWeatherForecast() {
         let forecastService = ForecastService(APIKey: forecastAPIKey)
         forecastService.getForecast(coordinate.lat, long: coordinate.long) {
             (let currently) in
-                if let currentWeather = currently {
+            if let currentWeather = currently {
                 dispatch_async(dispatch_get_main_queue()) {
                     
                     if let temperature = currentWeather.temperature {
@@ -50,12 +59,13 @@ class ViewController: UIViewController {
                 
             }
         }
+    
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction func refreshWeather() {
+        retreieveWeatherForecast()
     }
-
+    
 
 }
