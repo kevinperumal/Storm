@@ -65,31 +65,40 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-qa-qm7">
-                                <rect key="frame" x="256" y="514" width="88" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-qa-qm7">
+                                <rect key="frame" x="256" y="514" width="88" height="46"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiZ-sF-few">
+                                <rect key="frame" x="279" y="50" width="43" height="43"/>
+                                <state key="normal" image="refresh"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5dn-1t-6Ky" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0or-RZ-j1c"/>
                             <constraint firstItem="bfM-Z3-Fdv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-65.5" id="6cT-Bd-o8B"/>
+                            <constraint firstItem="gV2-il-lzT" firstAttribute="top" secondItem="hiZ-sF-few" secondAttribute="bottom" constant="33" id="8I2-Lb-o8W"/>
+                            <constraint firstItem="hiZ-sF-few" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="750" constant="30" id="B9W-pO-810"/>
+                            <constraint firstItem="hiZ-sF-few" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BGp-dx-ESW"/>
                             <constraint firstItem="WQT-qa-qm7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C0v-Sf-RHt"/>
                             <constraint firstItem="5dn-1t-6Ky" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EOr-Gj-IKe"/>
                             <constraint firstItem="wWB-BN-kUd" firstAttribute="centerX" secondItem="bfM-Z3-Fdv" secondAttribute="centerX" id="Ea2-9W-zGR"/>
+                            <constraint firstItem="WQT-qa-qm7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wWB-BN-kUd" secondAttribute="bottom" constant="30" id="JFj-3g-FRD"/>
                             <constraint firstItem="D9e-0k-ZiN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="OE4-bP-ou6"/>
                             <constraint firstItem="wWB-BN-kUd" firstAttribute="top" secondItem="bfM-Z3-Fdv" secondAttribute="bottom" constant="8" symbolic="YES" id="RPV-vY-BZO"/>
                             <constraint firstItem="rCv-Rl-FuQ" firstAttribute="top" secondItem="5dn-1t-6Ky" secondAttribute="bottom" constant="6" id="S89-eE-9or"/>
                             <constraint firstItem="qvb-QH-1WZ" firstAttribute="top" secondItem="rCv-Rl-FuQ" secondAttribute="bottom" constant="9" id="ZYe-Eb-y40"/>
+                            <constraint firstItem="Cyr-dp-Hiq" firstAttribute="top" secondItem="hiZ-sF-few" secondAttribute="bottom" constant="15" id="c7E-zI-M8N"/>
                             <constraint firstItem="rCv-Rl-FuQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="cEp-5F-6EG"/>
                             <constraint firstItem="qvb-QH-1WZ" firstAttribute="centerX" secondItem="rCv-Rl-FuQ" secondAttribute="centerX" id="jMk-P6-hpl"/>
                             <constraint firstItem="5dn-1t-6Ky" firstAttribute="top" secondItem="gV2-il-lzT" secondAttribute="bottom" constant="55" id="k76-c7-8zA"/>
                             <constraint firstItem="5dn-1t-6Ky" firstAttribute="top" secondItem="D9e-0k-ZiN" secondAttribute="bottom" constant="37" id="lGD-Ke-s9a"/>
                             <constraint firstItem="bfM-Z3-Fdv" firstAttribute="top" secondItem="5dn-1t-6Ky" secondAttribute="bottom" constant="6" id="mih-Vh-g7r"/>
                             <constraint firstItem="gV2-il-lzT" firstAttribute="leading" secondItem="Cyr-dp-Hiq" secondAttribute="trailing" constant="42" id="mqE-g7-et5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WQT-qa-qm7" secondAttribute="bottom" constant="60" id="r73-Jf-tWi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WQT-qa-qm7" secondAttribute="bottom" priority="750" constant="40" id="r73-Jf-tWi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -107,5 +116,6 @@
     </scenes>
     <resources>
         <image name="default" width="30" height="30"/>
+        <image name="refresh" width="43" height="43"/>
     </resources>
 </document>
